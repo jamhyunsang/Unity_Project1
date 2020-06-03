@@ -10,12 +10,15 @@ public class PlayerMove : MonoBehaviour
     public float _speed = 5.0f;
     public Vector2 margin;      //뷰 포트 좌표는 0,0~1.0사이의 값
 
+ 
+
     
 
     // Start is called before the first frame update
     void Start()
     {
         margin = new Vector2(0.1f, 0.05f);
+       
     }
 
     // Update is called once per frame
@@ -23,6 +26,7 @@ public class PlayerMove : MonoBehaviour
     {
        
        Move();
+        
     }
 
     private void Move()
