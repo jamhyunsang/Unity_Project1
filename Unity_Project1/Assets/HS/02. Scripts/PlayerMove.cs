@@ -17,7 +17,7 @@ public class PlayerMove : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        margin = new Vector2(0.1f, 0.05f);
+        margin = new Vector2(0.1f, 0.1f);
        
     }
 
