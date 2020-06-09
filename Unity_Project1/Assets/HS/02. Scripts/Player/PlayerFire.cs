@@ -36,7 +36,7 @@ public class PlayerFire : MonoBehaviour
     void Update()
     {
        // BulletFire();
-        FireRay();
+       // FireRay();
     }
 
     private void BulletFire()
@@ -54,7 +54,7 @@ public class PlayerFire : MonoBehaviour
        
     }
 
-    private void FireRay()
+    public void FireRay()
     {
         ray.origin = transform.position;
         ray.direction = transform.up;
@@ -96,5 +96,10 @@ public class PlayerFire : MonoBehaviour
             }
                 
         }
+    }
+    public void OnFireButton()
+    {
+        GameObject bullet = Instantiate(_bulletFactory);
+        bullet.transform.position = _bulletPoint.transform.position;
     }
 }

@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
+
 public class Enemy : MonoBehaviour
 {
     //위에서 아래로 떨어지기만 한다( 똥피하기 느낌)
@@ -27,6 +29,8 @@ public class Enemy : MonoBehaviour
     {
         //자기 자신도 없애고
         //충돌된 오브젝트도 없앤다.
+
+        Score.instance.AddScore();
         Destroy(gameObject);
         Destroy(collision.gameObject);
     }
